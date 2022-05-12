@@ -1,0 +1,140 @@
+:root {
+  --primario: linear-gradient(
+    90deg,
+    rgba(237, 27, 52, 1) 0%,
+    rgba(0, 114, 186, 1) 100%
+  );
+  --negro: #000;
+  --blanco: #fff;
+  --azul: rgb(0, 50, 81);
+  --azulOscuro: rgb(0, 28, 46);
+  --fuente-primaria: "Poppins", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+ background: rgb(241, 239, 239);
+  background: linear-gradient(
+    90deg,
+    rgba(241, 239, 239, 1) 0%,
+    rgba(224, 182, 186, 1) 100%
+  );
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background: var(--blanco);
+  text-align: center;
+  font-family: var(--fuente-primaria);
+
+  color: var(--negro);
+  padding: 10px 0;
+}
+
+.header_envios {
+  display: grid;
+  grid-template-columns: 300px 40px;
+}
+
+.navegacion {
+  display: grid;
+  grid-template-columns: 500px 1fr 200px;
+  align-items: center;
+  height: 90px;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: var(--blanco);
+  font-family: var(--fuente-primaria);
+  font-size: 1.5rem;
+  padding: 0 0;
+  width: 100%;
+  background: var(--primario);
+}
+
+@media screen and (max-width: 480px) {
+  .navegacion {
+    padding: 2rem 0;
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.navegacion_usuario {
+  display: flex;
+  gap: 20px;
+}
+
+.navegacion_iconos:hover {
+    stroke: var(--azulOscuro);
+}
+
+.logo_nav {
+  margin: auto;
+  width: 2rem;
+}
+
+@media screen and (max-width: 480px){
+    .navegacion_iconos:active {
+        stroke: var(--azulOscuro);
+    }
+}
+
+@media screen and (max-width: 480px) {
+  .navegacion_usuario {
+    margin-top: 30px;
+    justify-content: center;
+    grid-row: 2 / 3;
+    padding: 0;
+  }
+}
+
+.barra_navegacion {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tienda {
+  color: var(--blanco);
+}
+
+.nosotros {
+  color: var(--blanco);
+}
+
+.tienda-seleccion {
+  color: var(--azul);
+}
+
+.nosotros-seleccion {
+  color: var(--azul);
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: 10rem;
+  width: 100%;
+  height: 200px;
+  background: var(--primario);
+}
+
+@media screen and (max-width: 480px){
+    .footer {
+      height: 100px;
+    }
+}
+
+
+
+
+
+
+
